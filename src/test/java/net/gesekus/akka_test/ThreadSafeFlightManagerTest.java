@@ -1,10 +1,13 @@
 package net.gesekus.akka_test;
 
+import org.junit.Test;
+
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
-public class ThreadSafeFlightManagerTest extends TestCase {
+public class ThreadSafeFlightManagerTest  {
 	
+	@Test
 	public void testIt() {
 		FlightManager fm = new ThreadSafeFlightManager();
 		MutableFlight f = new MutableFlight(1,"Test");
