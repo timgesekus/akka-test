@@ -13,7 +13,7 @@ public class MutableFlight implements Flight{
 	public MutableFlight(Flight other) {
 		super();
 		this.id = other.getId();
-		this.callsign = new String(other.getCallsign());
+		this.callsign = other.getCallsign();
 	}
 
 	@Override
@@ -54,11 +54,11 @@ public class MutableFlight implements Flight{
 	}
 
 	public String getCallsign() {
-		return new String(callsign);
+		return callsign;
 	}
 
 	public void setCallsign(String callsign) {
-		this.callsign = new String(callsign);
+		this.callsign = callsign;
 	}
 
 }

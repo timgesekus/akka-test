@@ -1,9 +1,8 @@
 package net.gesekus.akka_test;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-import junit.framework.Assert;
-import junit.framework.TestCase;
 
 public class ThreadSafeFlightManagerTest  {
 	
@@ -25,7 +24,7 @@ public class ThreadSafeFlightManagerTest  {
 		Flight h = fm.get(1);
 		
 		//Assert that we return a copy
-		Assert.assertFalse(h.getCallsign() == h.getCallsign());
+		Assert.assertFalse(h.getCallsign() == mg.getCallsign());
 	
 		
 	}
